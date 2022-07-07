@@ -16,7 +16,7 @@ const WelcomeBlock = () => {
             alert("Login Success. Token:"+token)
         })
         .catch((err)=>{
-            alert(err.response.data.error)
+            alert("Error: "+err.response.data.error)
         })
     }
   return (
