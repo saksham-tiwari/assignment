@@ -63,7 +63,7 @@ code {
   height: 94vh;
 }
 
-.ant-col-8 input{
+.welcome input{
   margin-bottom: 15px;
   padding: 10px 10px;
   width: 80%;
@@ -95,6 +95,22 @@ code {
   height: 50px;
 }
 
-@media only screen and (max-width:768px){
+.hide{
+  visibility: hidden;
+  display: none;
+}
 
+@media only screen and (max-width:768px){
+  .navbar button{
+    display: none;
+  }
+  .rowGrid{
+    display: none;
+    height: 0;
+    visibility: collapse;
+  } 
+  .hide{
+    visibility: visible;
+    display: block;
+  }
 }

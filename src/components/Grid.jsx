@@ -9,7 +9,7 @@ const Grid = () => {
       };
   return (
     <>
-        <Row>
+        <Row className='rowGrid'>
             <Col span={8}>
                 <div className='welcome'>
                     <div>
@@ -18,7 +18,7 @@ const Grid = () => {
                         <Input placeholder='Email Address *' type={"email"}/>
                         <Input placeholder='Password *' type={"password"}/>
                         <Button type='primary' className='primary'>Login</Button>
-                        <div><Checkbox onChange={onChange} style={{float:"left", marginLeft:"10%"}}>Remember me</Checkbox> <a href=""  style={{float:"right", marginRight:"10%"}}>Forgot Password?</a></div>
+                        <div><Checkbox onChange={onChange} style={{float:"left", marginLeft:"10%"}}>Remember me</Checkbox> <a href="/"  style={{float:"right", marginRight:"10%"}}>Forgot Password?</a></div>
                     </div>
                 </div>
             </Col>
@@ -26,6 +26,16 @@ const Grid = () => {
                 <img src={img1} alt='one'/>
             </Col>
         </Row>
+        <div className='welcome hide'>
+            <div>
+                <h1>Welcome Back</h1>
+                <p>Sub-title text goes here</p>
+                <Input placeholder='Email Address *' type={"email"}/>
+                <Input placeholder='Password *' type={"password"}/>
+                <Button type='primary' className='primary'>Login</Button>
+                <div><Checkbox onChange={onChange} style={{float:"left", marginLeft:"10%"}}>Remember me</Checkbox> <a href="/"  style={{float:"right", marginRight:"10%"}}>Forgot Password?</a></div>
+            </div>
+        </div>
     </>
   )
 }
